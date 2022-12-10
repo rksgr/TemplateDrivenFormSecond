@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { Candidate } from './candidate';
 
 @Component({
   selector: 'app-root',
@@ -7,4 +8,9 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'TemplateDrivenFormSecond';
+
+  companies = ['JP Morgan', 'Virtusa', 'Citi', 'HSBC'];
+
+  candidateModel = new Candidate('Rohan','rohan@gmail.com', 55555555,
+                    'JP Morgan','Kolkata',true);
 }
